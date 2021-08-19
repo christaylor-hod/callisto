@@ -1,0 +1,191 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Callisto
+{% endblock %}
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Time</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+{% block content %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <h1 class="govuk-heading-m">Monday 22nd November 2022 (today)
+        </h1>
+
+        
+          <p><a href="">My calendar</a></p>
+        
+<p><a href="">Previous</a>  <a href="">Next</a>  <a href="">Choose another</a></p>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h2 class="govuk-fieldset__heading">
+        Record my working time
+      </h2>
+    </legend>
+    <div id="passport-issued-hint" class="govuk-hint">
+      For example, 08:00 to 18:00
+    </div>
+    <div class="govuk-date-input" id="passport-issued">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+            <strong>Start time</strong>
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="time-start" name="time-start" type="text" pattern="[0-9]*" inputmode="numeric" novalidate></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+           <strong> Finish time</strong>
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="time-finish" name="time-finish" type="text" pattern="[0-9]*" inputmode="numeric" novalidate></div>
+      </div>
+    
+    </div>
+
+  </fieldset>
+</div>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    
+    <div class="govuk-checkboxes">
+    
+      
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="shift" name="shift" type="checkbox" value="yes">
+        <label class="govuk-label govuk-checkboxes__label" for="shift">
+          Shift longer than 7 hours
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h2 class="govuk-heading-s">It looks like your scheduled hours have changed</h2>
+        <p>Did you get 7 days notice? <a href="">What does thid mean?</a></p>
+      
+      </legend>
+     
+      <div class="govuk-radios govuk-radios--inline">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+          <label class="govuk-label govuk-radios__label" for="sign-in">
+            Yes
+          </label>
+          
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+          <label class="govuk-label govuk-radios__label" for="sign-in-2">
+            No
+          </label>
+          
+        </div>
+      </div>
+  
+    </fieldset>
+  </div> 
+  
+  
+  
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h2 class="govuk-heading-s">Did you take your full meal break?</h2>
+      
+      
+      </legend>
+     
+      <div class="govuk-radios govuk-radios--inline">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+          <label class="govuk-label govuk-radios__label" for="sign-in">
+            Yes
+          </label>
+          
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+          <label class="govuk-label govuk-radios__label" for="sign-in-2">
+            No
+          </label>
+          
+        </div>
+      </div>
+  
+    </fieldset>
+  </div>
+
+  {% from "accordion/macro.njk" import govukAccordion %}
+
+
+{% from "textarea/macro.njk" import govukTextarea %}
+{% set textHtml %}
+{{ govukTextarea({
+  id: "notes",
+  name: "notes",
+  type: "",
+  classes: "govuk-input--width-20",
+  label: {
+    text: "Notes"
+  }
+}) }}
+{% endset -%}
+
+
+{{ govukAccordion({
+  id: "accordion-default",
+  items: [
+    {
+      heading: {
+        text: "Add notes"
+      },
+      content: {
+        html: textHtml
+      }
+    }
+  ]
+}) }}
+
+<button class="govuk-button button-secondary">
+  Add another time period
+</button>
+
+<div class="govuk-button-group">
+  <button class="govuk-button" data-module="govuk-button">
+ Submit time
+  </button>
+
+  <button class="govuk-button button-secondary" data-module="govuk-button">
+    Cancel
+  </button>
+</div>
+
+
+
+      </div>
+
+</div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,94 @@
+.week {
+    display: flex;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #cbcbcb;
+  }
+  
+  .day {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+  }
+  
+  .week:first-of-type .day:first-of-type {
+    //margin-left: 42.85714%;
+  }
+  
+  .week:last-of-type .day:last-of-type {
+    //margin-right: 14.285%;
+  }
+  
+  /* OTHER STYLES */
+  
+  
+  .month {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+ 
+  .week {
+    min-height: 130px;
+    min-width: 180px;
+    @media only screen and (max-width: 360px) {
+    max-height: 100px;
+    }
+  }
+  
+  .day {
+    
+    padding: 8px;
+    background-color: transparent;
+    border-left: 1px solid #cbcbcb;
+    @media only screen and (max-width: 360px) {
+      max-height: 100px;
+      }
+
+
+
+  }
+
+  span.flex{
+    background-color: #D4351C;
+    display:flex;
+    color: #f1f1f1;
+    outline: 7px solid #D4351C;
+    justify-content: space-between;
+    @media only screen and (max-width: 560px) {
+      align-content: end;
+      float: right;
+      max-width: 150px;
+      text-align: left;
+        }
+   
+
+}
+
+  span.flex::after {
+    content: " Flex change";
+    font-weight: normal;
+    margin-left: 32px;
+    float: right;
+  }
+
+// MOBILE UI
+
+.calendar-container{
+  border: 1px solid #cbcbcb;
+  padding:8px;
+  
+}
+
+.available{
+  border: 8px solid #fff;
+  
+  background: #fff;
+  
+}
+
+#calender-header{
+  display: flex;
+  justify-content: space-between;
+
+}

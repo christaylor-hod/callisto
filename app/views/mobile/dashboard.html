@@ -1,0 +1,136 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Callisto
+{% endblock %}
+{% block pageTitle %}
+ header stuff
+{% endblock %}
+
+{% block beforeContent %}
+
+<nav id="nav">
+  <div class="navbar">
+    <ul class="navbar__list-items">
+      <li class="active">
+        <a href="../sign-in">Home</a>
+      </li>
+      <li>
+        <a href="../schedule">Time</a>
+      </li>
+      <li>
+        <a href="../dashboard">Accruals</a>
+      </li>
+    
+    </ul>
+  </div>
+</nav>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Dashboard</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <h2 class="govuk-heading-m">My tasks
+        </h2>
+
+        <div class="ho-card">
+          <h2 class="govuk-heading-s">
+            Record your working time
+          </h2>
+          <p>You need to update and save your time cards to keep your accruals upto date</p>
+          <p><a href="">My calendar</a></p>
+        </div>
+
+        <div class="ho-card">
+          <h2 class="govuk-heading-s">
+            New shifts assigned
+          </h2>
+          <p>You need to update and save your time cards to keep your accruals upto date</p>
+          <p><a href="">Monday</a></p>
+          <p><a href="">Tuesday</a></p>
+          <p><a href="">Wednesday</a></p>
+        </div>
+
+        <div class="ho-card">
+          <h2 class="govuk-heading-s">
+            You have flex changes
+          </h2>
+          <p>You need to update and save your time cards to keep your accruals upto date</p>
+          <p><a href="">Thursday 19 November</a></p>
+        </div>
+        
+
+
+      
+
+      
+
+
+
+      </div>
+
+
+      <!--cards to link to managing records-->
+
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m">My shifts this week
+        </h2>
+
+        <div class="ho-card">
+          <p>All shifts completed this week</p>
+          <p><a href="">Thursday 19 November</a></p>
+        </div>
+
+
+        <h2 class="govuk-heading-m">Accruels status
+        </h2>
+
+        <div class="ho-card">
+          <p>You need to update and save your time cards to keep your accruals upto date</p>
+          <p><a href="">Go to my accruels</a></p>
+        </div>
+
+        
+
+        
+
+
+
+    
+
+      </div>
+
+
+
+
+
+      <!--closing div for row-->
+    </div>
+
+  </div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+{% endblock %}

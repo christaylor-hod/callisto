@@ -1,0 +1,405 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Callisto
+{% endblock %}
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Dashboard</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+<h1 class="govuk-heading-s"><span class="govuk-hint">My calendar</span></h1>
+<h2 class="govuk-heading-m">James Thomas</h2>
+<p><a href="">Select another person</a></p>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Select a view
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="cal">Calendar view</option>
+    <option value="list" selected>List view</option>
+    
+  </select>
+</div>
+<div id="calender-header"><a href=""> < October</a><h3 class="govuk-heading-s">November</h3><a href="">December ></a></div>
+<div class="calendar-container">
+<dl class="govuk-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Mon 1
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+    <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row flex-container">
+    <dt class="govuk-summary-list__key">
+      Tue 2 <span class="ho-tag ho-tag-red"></span>
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled Actual<br> 06:00 - 12:00 10:00 - 15:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row available">
+    <dt class="govuk-summary-list__key">
+      Wed 3
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Rest day
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row available">
+    <dt class="govuk-summary-list__key">
+      Thurs 4
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Rest day
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  
+  <div class="govuk-summary-list__row available">
+    <dt class="govuk-summary-list__key">
+      Fri 5
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Rest day
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Sat 6
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Sun 7
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Mon 8
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Tues 9
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Weds 10
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Thurs 11
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Fri 12
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Sat 13
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Sun 14
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Mon 15
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Tues 16
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Weds 17
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Thurs 18
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Fri 19
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Sat 20
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Sun 21
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Mon 22
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Tues 23
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row available">
+    <dt class="govuk-summary-list__key">
+      Weds 24
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Thurs 25
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Fri 26
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Sat 27
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Sun 28
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Mon 29
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Tues 30
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Weds 31
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Scheduled <br> 06:00 - 12:00
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a href="">Edit</a>
+    </dd>
+  </div>
+</dl>
+</div>
+
+   
+
+      
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+{% endblock %}

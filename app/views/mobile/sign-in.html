@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Callisto
+{% endblock %}
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href=".">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Item</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+{% block content %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <h1 class="govuk-heading-l mrp-section-header">Sign in to Callisto
+        </h1>
+        <!--Tabs to choose whether to search by ID number or name-->
+
+        <!--<nav class="mrp-navbar-position">
+      <div class="mrp-navbar">
+        <ul class="mrp-navbar__list-items">
+          <li class="active">
+            <a href="#">Teams/clubs</a>
+          </li>
+          <li>
+            <a href="person-search">Second option for search criteria?</a>
+          </li>
+        </ul>
+      </div>
+    </nav>-->
+
+        <!--search by ID number-->
+        <form action="dashboard" method="post" novalidate>
+
+          <div class="govuk-form-group">
+
+            <label class="govuk-label govuk-label--s" for="Unique-ID">
+              Username
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="Unique ID"
+              name="Unique ID" type="text" aria-describedby="Unique ID">
+          </div>
+          
+
+          <div class="govuk-form-group">
+
+            <label class="govuk-label govuk-label--s" for="Unique-ID">
+              Password
+            </label>
+
+            <input class="govuk-input govuk-input--width-20" id="Unique ID"
+              name="Unique ID" type="text" aria-describedby="Unique ID">
+          </div>
+
+          <!--search button-->
+          <button class="govuk-button" data-module="govuk-button" href="search">
+            Sign in
+          </button>
+
+        </form>
+
+
+
+      </div>
+
+
+      <!--cards to link to managing records-->
+
+      <div class="govuk-grid-column-one-third">
+
+        
+
+
+
+    
+
+      </div>
+
+
+
+
+
+      <!--closing div for row-->
+    </div>
+
+
+
+
+</div>
+
+
+{% endblock %}
